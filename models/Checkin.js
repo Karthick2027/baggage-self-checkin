@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-counterno = Math.floor(Math.random() * 5)
+let counterno = Math.floor(Math.random() * 5)
 const selfCheckin = new mongoose.Schema({
   Passengername: {
     type: String,
@@ -7,19 +7,19 @@ const selfCheckin = new mongoose.Schema({
   },
   Phonenumber: {
     type: Number,
-    default: "99438 44532",
+    required: true,
   },
   Email: {
     type: "String",
-    default: "abc@gmail.com",
+    required: true,
   },
   Flightnumber: {
-    type: Number,
-    default: "AI 126",
+    type: String,
+    required: true,
   },
   Destination: {
     type: String,
-    default: "Chicago to Delhi",
+    required: true,
   },
   Counternumber: {
     type: Number,
