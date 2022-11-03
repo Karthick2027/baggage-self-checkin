@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 let counterno = Math.floor(Math.random() * 5) + 1
 let date = new Date(Date.now()).getMonth() + 1
+
 const selfCheckin = new mongoose.Schema({
   Passengername: {
     type: String,
